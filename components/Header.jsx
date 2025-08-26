@@ -5,7 +5,7 @@ export default function Header(){
     return (
         <View style={styles.container}>
 
-            <Image source={require('../assets/Logo (1).png')} />
+            <Image style={styles.logo} source={require('../assets/logo.png')} />
 
         </View>
     )
@@ -21,6 +21,8 @@ const styles = StyleSheet.create({
     },
 
     logo: {
-
+      height: 180,
+        width: 180,
+      resizeMode: "contain",
     },
 })

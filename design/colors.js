@@ -7,12 +7,14 @@ export default {
     green_base: "#479C6E",
     green_dark: "#2D6C4A",
 
+    white: "#FFFFFF",
     gray_100: "#F0EDF2",
     gray_200: "#E5E2E9",
     gray_330: "#E0DCE4",
     gray_400: "#D1CBD7",
     gray_500: "#6B6572",
     gray_600: "#262428",
+    black: "#000000",
 
     danger: "#C2464D"
 }
