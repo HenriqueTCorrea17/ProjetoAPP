@@ -2,11 +2,15 @@ import {TextInput, View, StyleSheet} from "react-native";
 import sizes from "../design/sizes";
 import colors from "../design/colors";
 
-export default function Search () {
+export default function Search ({texto, setTexto}) {
     return (
         <View style={styles.container}>
 
-            <TextInput style={styles.input} placeholder={"Busque por Tarefas"} />
+            <TextInput style={styles.input}
+                       placeholder={"Busque por Tarefas"}
+                       onChangeText={setTexto}
+                       value={texto}
+            />
 
         </View>
     )
