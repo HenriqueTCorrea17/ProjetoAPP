@@ -2,13 +2,13 @@ import {Image, TextInput, TouchableOpacity, View, StyleSheet} from "react-native
 import colors from "../design/colors";
 import sizes from "../design/sizes";
 
-export default function FormCadastro() {
+export default function FormCadastro({fnCadastrar, texto, setTexto}) {
     return (
         <View style={styles.container}>
 
-            <TextInput style={styles.input} placeholder={"Adicione uma nova tarefa"} />
+            <TextInput onChangeText={setTexto} value={texto} style={styles.input} placeholder={"Adicione uma nova tarefa"} />
 
-            <TouchableOpacity style={styles.btn}>
+            <TouchableOpacity onPress={fnCadastrar} style={styles.btn}>
                 <Image style={styles.img} source={require('../assets/add.png')} />
             </TouchableOpacity>
 
